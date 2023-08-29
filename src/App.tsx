@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Main from "./Route/Main";
+import Router from "./Router";
 
 const GlobaleStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -36,8 +36,8 @@ const GlobaleStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
-    background-color: ${(props) => props.theme.bgColor};
-    color: white;
+    background-color: white;
+    color: ${(props) => props.theme.textColor};
     font-weight: bold;
   }
   blockquote, q {
@@ -72,7 +72,8 @@ const GlobaleStyle = createGlobalStyle`
 function App() {
   return (
     <>
-      <Main />
+      <GlobaleStyle />
+      <Router />
     </>
   );
 }
