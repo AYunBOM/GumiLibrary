@@ -37,6 +37,16 @@ const GlobaleStyle = createGlobalStyle`
   body {
     line-height: 1;
     background-color: white;
+    //background-image: url("Img/library.jpg");
+    background: linear-gradient(
+      to left,
+      rgba(255, 255,255,0) 10%,
+      rgba(255, 255,255,0.3) 25%,
+      rgba(255, 255,255,0.5) 40%,
+      rgba(255, 255,255,0.7) 50%,
+      rgba(255, 255,255,0.8) 75%,
+      rgba(255, 255,255,1) 100%,
+    ), url("Img/library.jpg");
     color: ${(props) => props.theme.textColor};
     font-weight: bold;
   }

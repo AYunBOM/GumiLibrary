@@ -1,15 +1,6 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 
-const ImgContainer = styled.div`
-  height: 180px;
-  border-radius: 1rem;
-  background-image: ".Img/library.jpg";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-`;
-
 const Container = styled.div`
   padding: 20px 20px;
   max-width: 480px;
